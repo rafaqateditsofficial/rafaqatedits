@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://rafaqateditsofficial.github.io/rafaqatedits/sitemap.xml
