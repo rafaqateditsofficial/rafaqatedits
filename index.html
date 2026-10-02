@@ -11,29 +11,29 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{text-decoration:none;color:inherit}
 header{position:sticky;top:0;z-index:50;background:rgba(8,8,8,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .header{max-width:1160px;margin:auto;padding:12px 18px;min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:15px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:18px;letter-spacing:.4px}.brand-mark{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#d20b0b,#680000);border:2px solid #f2c94c;color:#f2c94c;font-weight:900;font-size:13px}.brand b{color:var(--gold)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:18px;letter-spacing:.4px}.brand-mark{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#d20b0b,#680000);border:2px solid #f2c94c;color:#f2c94c;font-weight:900;font-size:13px}.brand-img{width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid #f2c94c}.brand b{color:var(--gold)}
 nav{display:flex;gap:4px;align-items:center}nav a{padding:10px 12px;font-weight:700;font-size:14px;border-radius:8px}nav a:hover{background:#1c1c1c;color:var(--gold)}
 .menu{display:none;border:0;background:none;color:var(--gold);font-size:31px;cursor:pointer}
-main{max-width:1160px;margin:auto}section{padding:82px 20px}.hero{min-height:82vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}.badge{color:var(--gold);font-size:13px;font-weight:900;letter-spacing:2px}.hero-logo{width:150px;height:150px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#dc1717,#730000 70%);border:4px solid var(--gold);box-shadow:0 0 50px rgba(242,201,76,.13);font-weight:900;color:var(--gold);font-size:18px;letter-spacing:1px;margin-bottom:24px}
+main{max-width:1160px;margin:auto}section{padding:82px 20px}.hero{min-height:82vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}.hero-logo-img{width:285px;height:285px;object-fit:contain;margin-bottom:24px;filter:drop-shadow(0 0 25px rgba(242,201,76,.12))}.badge{color:var(--gold);font-size:13px;font-weight:900;letter-spacing:2px}.hero-logo{width:150px;height:150px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#dc1717,#730000 70%);border:4px solid var(--gold);box-shadow:0 0 50px rgba(242,201,76,.13);font-weight:900;color:var(--gold);font-size:18px;letter-spacing:1px;margin-bottom:24px}
 h1{font-size:clamp(42px,8vw,82px);line-height:.98;margin:10px 0}h2{font-size:clamp(30px,5vw,48px);margin:8px 0 14px}h3{color:var(--gold);margin:7px 0}p{color:#d0d0d0}.lead{max-width:760px;font-size:18px}
 .btn{display:inline-block;margin:8px;padding:13px 20px;border-radius:9px;background:var(--gold);color:#080808;font-weight:900}.btn.red{background:var(--red);color:#fff}.center{text-align:center}.dark{background:#0d0d0d}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:24px}.num{color:var(--gold);font-weight:900}
 .socials{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:20px}.socials a{border:1px solid #3a3a3a;border-radius:9px;padding:10px 14px}
 .wa{position:fixed;right:18px;bottom:18px;z-index:60;background:#20b858;color:white;font-weight:900;padding:12px 17px;border-radius:999px;box-shadow:0 8px 30px #000}
 footer{border-top:1px solid var(--line);padding:30px 20px;text-align:center;color:#999}
-@media(max-width:760px){.menu{display:block}nav{display:none;position:absolute;left:12px;right:12px;top:70px;background:#111;border:1px solid #333;border-radius:13px;padding:8px;box-shadow:0 18px 45px #000}nav.open{display:flex;flex-direction:column;align-items:stretch}nav a{padding:13px 15px;border-bottom:1px solid #252525}.grid{grid-template-columns:1fr}.hero{min-height:76vh}section{padding:62px 18px}}
+@media(max-width:760px){.hero-logo-img{width:235px;height:235px}.menu{display:block}nav{display:none;position:absolute;left:12px;right:12px;top:70px;background:#111;border:1px solid #333;border-radius:13px;padding:8px;box-shadow:0 18px 45px #000}nav.open{display:flex;flex-direction:column;align-items:stretch}nav a{padding:13px 15px;border-bottom:1px solid #252525}.grid{grid-template-columns:1fr}.hero{min-height:76vh}section{padding:62px 18px}}
 </style>
 </head>
 <body>
 <header><div class="header">
-<a class="brand" href="#home"><span class="brand-mark">RE</span><span><b>RAFAQAT</b> EDITS</span></a>
+<a class="brand" href="#home"><img class="brand-img" src="logo.png" alt="RAFAQAT EDITS"><span><b>RAFAQAT</b> EDITS</span></a>
 <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
 <nav id="nav"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#pricing">Pricing</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
 </div></header>
 
 <main>
 <section id="home" class="hero">
-<div class="hero-logo">RAFAQAT<br>EDITS</div>
+<img class="hero-logo-img" src="hero-logo.png" alt="RAFAQAT EDITS">
 <div class="badge">VIDEO EDITOR • CINEMATIC • SPORTS • SOCIAL</div>
 <h1>RAFAQAT EDITS</h1>
 <p class="lead">Professional video editing by <b>Rafaqat Ali Wattoo</b> — cinematic edits, reels, YouTube videos, sports highlights and social media content.</p>
